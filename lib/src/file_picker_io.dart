@@ -1,11 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'file_picker.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/services.dart';
-
-import 'file_picker_result.dart';
-import 'platform_file.dart';
 
 final MethodChannel _channel = MethodChannel(
   'miguelruivo.flutter.plugins.filepicker',
@@ -159,7 +156,7 @@ class FilePickerIO extends FilePicker {
       initialDirectory: initialDirectory,
       type: type,
       allowedExtensions: allowedExtensions,
-      // bytes: bytes,
+      bytes: bytes,
       lockParentWindow: lockParentWindow,
     );
   }

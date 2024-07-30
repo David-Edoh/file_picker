@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'dart:typed_data';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:path/path.dart';
-import 'platform_file.dart';
 
 Future<List<PlatformFile>> filePathsToPlatformFiles(
   List<String> filePaths,
